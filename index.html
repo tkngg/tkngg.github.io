@@ -32,15 +32,12 @@
         //    auto = setTimeout(function(){ submitform(); autoRefresh(); }, 10000);
         // }
         // document.getElementById("csrf_form").submit().then(function(res){console.log(resp); window.location.href = "http://www.w3schools.com";});
-        document.getElementById("csrf_form").submit().then(function(resp){
-          setTimeout(function(){
-              //do what you need here
-              console.log('sleep')
-          }, 2000);
-        });
+        
         setTimeout(function(){
             //do what you need here
+            document.getElementById("csrf_form").submit();
             console.log('sleep2')
+            window.location = "https://tkngg.github.io";
         }, 2000);
     }
 
